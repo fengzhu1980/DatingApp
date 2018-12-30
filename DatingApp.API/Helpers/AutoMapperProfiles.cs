@@ -24,6 +24,7 @@ namespace DatingApp.API.Helpers
                 opt.MapFrom((d, dest) => d.DateOfBirth.CalculateAge());
               });
             CreateMap<Photo, PhotosForDetailedDto>();
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }
